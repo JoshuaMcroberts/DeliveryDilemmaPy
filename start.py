@@ -15,6 +15,8 @@ def FilesToDict(Path, Ext, IsRoom='no'):
             # if 'i' contains \\ switch for /
             if "\\" in i:
                 k = i.replace('\\', '/')
+            else:
+                k=i
 
             a = k.replace(Path,'')
             b = a.replace(Ext,'')
