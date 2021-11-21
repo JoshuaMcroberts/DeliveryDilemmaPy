@@ -90,7 +90,7 @@ for i in BaseRoomsDic:
 
 # Attaching interactive stuff to areas
 RoomsDic['1'].addObject('flower', ObjectsDic['rose']) # porto
-RoomsDic['2'].addObject('crap', ObjectsDic['poo']) # praia
+# RoomsDic['2'].addObject('crap', ObjectsDic['poo']) # praia
 RoomsDic['3'].addObject('fruit', ObjectsDic['apple']) # alfandega
 RoomsDic['4'].addObject('bird', ObjectsDic['sparrow']) # donzela
 
