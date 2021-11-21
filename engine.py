@@ -14,6 +14,33 @@ class SudObject:
     def use(self):
         return self.usability
 
+# CLASS STATIC OBJECTS ================================================================
+# 4 things a static object can be - Portal, Locked Portal, Storage object or Locked Storage Object
+class SudStaticObject:
+    def __init__(self, name, sight, collide = 'Nothing happens.', usability = 'Unusable.'):
+        self.name = name
+        self.sight = sight.capitalize()
+        self.locked = False
+        self.unlockCheck = " " 
+        self.objects = {}
+        self.actionTake = False
+        self.collide = collide.capitalize()
+        self.usability = usability.capitalize()
+
+    def view(self):
+        return self.sight
+    def unlock(self):
+        #run check 
+        if self.locked == False:
+            print("Already unlocked")
+        #check for unlock need   
+
+    def touch(self):
+        return self.collide
+    def use(self):
+        return self.usability
+    
+
 # CLASS PLAYER =================================================================
 class SudPlayer:
     def __init__(self, name):
